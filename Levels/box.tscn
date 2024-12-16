@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dt7f46hqe75d0"]
+
+[ext_resource type="Texture2D" uid="uid://d15me7bhv3ekp" path="res://Assets/Sprout Lands - Sprites - Basic pack/box/1.png" id="1_pbsbw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e2yf8"]
+size = Vector2(36, 36)
+
+[node name="box" type="RigidBody2D"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(18, 11)
+scale = Vector2(0.0996094, 0.0996094)
+texture = ExtResource("1_pbsbw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(18, 18)
+shape = SubResource("RectangleShape2D_e2yf8")

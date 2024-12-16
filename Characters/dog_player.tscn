@@ -1,54 +1,54 @@
 [gd_scene load_steps=17 format=3 uid="uid://drcahv1foye1y"]
 
 [ext_resource type="Script" path="res://Characters/dog_player.gd" id="1_amwbw"]
-[ext_resource type="Texture2D" uid="uid://3ys8c6cl4o0x" path="res://husky-1/husky.png" id="2_gixcw"]
+[ext_resource type="Texture2D" uid="uid://3ys8c6cl4o0x" path="res://Assets/CreatedAssets/husky.png" id="2_ntasc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qyubc"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqadr"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fvskv"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(0, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ij4y"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_5pjxe"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(64, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6pe8i"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(96, 64, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_25r0h"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sty4k"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_24u4a"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(32, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dnmst"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(64, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4hagx"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(64, 96, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bdc75"]
-atlas = ExtResource("2_gixcw")
+atlas = ExtResource("2_ntasc")
 region = Rect2(96, 96, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ikghe"]
@@ -118,7 +118,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_iyoak"]
 radius = 12.0416
 
-[node name="DogPlayer" type="CharacterBody2D"]
+[node name="DogPlayer" type="CharacterBody2D" groups=["Player"]]
 scale = Vector2(0.5, 0.5)
 script = ExtResource("1_amwbw")
 
