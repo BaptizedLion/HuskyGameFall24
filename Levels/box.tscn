@@ -1,19 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://dt7f46hqe75d0"]
+[gd_scene load_steps=4 format=3 uid="uid://dt7f46hqe75d0"]
 
+[ext_resource type="Script" path="res://Levels/box.gd" id="1_2jsa4"]
 [ext_resource type="Texture2D" uid="uid://d15me7bhv3ekp" path="res://Assets/Sprout Lands - Sprites - Basic pack/box/1.png" id="1_pbsbw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_e2yf8"]
-size = Vector2(36, 36)
+size = Vector2(16, 17)
 
-[node name="box" type="RigidBody2D"]
+[node name="box" type="RigidBody2D" groups=["object"]]
 collision_layer = 2
 collision_mask = 2
+gravity_scale = 0.0
+lock_rotation = true
+linear_damp = 50.0
+angular_damp = 50.0
+script = ExtResource("1_2jsa4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(18, 11)
-scale = Vector2(0.0996094, 0.0996094)
+position = Vector2(8, 5.5)
+scale = Vector2(0.0429688, 0.0449219)
 texture = ExtResource("1_pbsbw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(18, 18)
+position = Vector2(8, 8.5)
 shape = SubResource("RectangleShape2D_e2yf8")

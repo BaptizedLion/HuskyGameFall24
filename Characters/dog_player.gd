@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 @export var move_speed: float = 50
 @onready var animated_sprite = $AnimatedSprite2D
+var interia : int = 100;
 
 func _physics_process(delta):
 	# Get input direction
