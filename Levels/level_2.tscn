@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://cy5ypblc04f5n"]
+[gd_scene load_steps=17 format=3 uid="uid://cy5ypblc04f5n"]
 
 [ext_resource type="PackedScene" uid="uid://drcahv1foye1y" path="res://Characters/dog_player.tscn" id="1_88k7f"]
 [ext_resource type="Texture2D" uid="uid://chock8cmed0p2" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" id="2_44wkx"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c53o6mmt7c6h4" path="res://Assets/Sprout Lands - Sprites - Basic pack/Tilesets/Fences.png" id="6_yecdt"]
 [ext_resource type="PackedScene" uid="uid://d281onx7huk6s" path="res://Levels/next_level.tscn" id="7_abt3t"]
 [ext_resource type="PackedScene" uid="uid://dt7f46hqe75d0" path="res://Levels/box.tscn" id="8_1sy4q"]
+[ext_resource type="PackedScene" uid="uid://bkp0is2jcah7s" path="res://security_camera.tscn" id="9_6ge5a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8v5et"]
 texture = ExtResource("2_44wkx")
@@ -653,3 +654,6 @@ position = Vector2(418, 241)
 
 [node name="box2" parent="." instance=ExtResource("8_1sy4q")]
 position = Vector2(414, 109)
+
+[node name="security_camera" parent="." instance=ExtResource("9_6ge5a")]
+position = Vector2(381, 206)

@@ -4,6 +4,10 @@ extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 var interia : int = 100;
 
+
+func _ready():
+	add_to_group("player")
+	print("Player added to group")
 func _physics_process(delta):
 	# Get input direction
 	var input_direction = Vector2(

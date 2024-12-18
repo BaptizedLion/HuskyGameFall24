@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkp0is2jcah7s"]
+
+[ext_resource type="Script" path="res://security_camera.gd" id="1_qijil"]
+[ext_resource type="Texture2D" uid="uid://b2ribxxqfgu3x" path="res://Assets/6 Rat 2/Idle.png" id="2_tjmy4"]
+
+[node name="security_camera" type="Node2D"]
+script = ExtResource("1_qijil")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+collision_mask = 3
+
+[node name="LineOfSight" type="Node2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_tjmy4")
+hframes = 4
